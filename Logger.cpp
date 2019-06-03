@@ -4,6 +4,7 @@
 #include <cstdarg>
 
 #include "Logger.h"
+
 /**
  * Determine type of log message.
  *
@@ -27,6 +28,24 @@ const char *Logger::get_type(Logger::TYPE type)
 			 return "???";
 	 }
  }
+
+/**
+ * Writes the given buffer to the log file.
+ *
+ * @param ptr 		the buffer to write to the log
+ */
+void Logger::write(const void *ptr, const int size)
+{
+	// open if unopened - continues from lazy constructors
+	if(!this->fd) {
+		// append by default
+		this->fd = fopen(this->filename.c_str(), "a+");
+	}
+	// write data to log file if given
+	if(ptr) {
+		fwrite(ptr, size, 1, this->fd);
+	}
+}
 
 /**
  * Write log message @ref msg of @ref type with @ref tag to log file.
@@ -63,7 +82,6 @@ void Logger::log(Logger::TYPE type, const char *tag, const char *fmt, va_list vl
 		snprintf(log_buf, sizeof(log_buf), log_fmt, get_type(type), tag, va_buf);
 		// write the formatted string to the log
 		write(log_buf, sizeof(log_buf));
-//	}
 }
 
 /**

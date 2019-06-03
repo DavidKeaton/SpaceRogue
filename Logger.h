@@ -15,11 +15,11 @@ class Logger
 {
 private:
 	// default log name
-	static constexpr auto DEFAULT_LOG = "captains.log";
+	const char *DEFAULT_LOG = "captains.log";
 	// file descriptor of log file
-	static FILE *fd;
+	FILE *fd;
 	// filename of log
-	static std::string filename;
+	std::string filename;
 
 	// types of log entries
 	enum TYPE {
@@ -44,8 +44,8 @@ private:
 	 * @param tag		tag of log message
 	 * @param msg		message itself
 	 */
-	static void log(TYPE type, const char *tag, const char *msg, ...);
-	static void log(TYPE type, const char *tag, const char *msg, va_list list);
+	void log(TYPE type, const char *tag, const char *msg, ...);
+	void log(TYPE type, const char *tag, const char *msg, va_list list);
 
 public:
 
@@ -98,53 +98,42 @@ public:
 	 *
 	 * @param ptr 		the buffer to write to the log
 	 */
-	static void write(const void *ptr, const int size)
-	{
-		// open if unopened - continues from lazy constructors
-		if(!fd) {
-			// append by default
-			fd = fopen(filename.c_str(), "a+");
-		}
-		// write data to log file if given
-		if(ptr) {
-			fwrite(ptr, size, 1, fd);
-		}
-	}
+	void write(const void *ptr, int size);
 	/**
 	 * Log DEBUG message @ref msg.
 	 *
 	 * @param tag 	specifies class or routine called from
 	 * @param msg 	the message to send to the log
 	 */
-	static void d(const char *tag, const char *fmt, ...);
+	void d(const char *tag, const char *fmt, ...);
 	/**
 	 * Log INFO message @ref fmt, ....
 	 *
 	 * @param tag 	specifies class or routine called from
 	 * @param fmt, ... 	the message to send to the log
 	 */
-	static void i(const char *tag, const char *fmt, ...);
+	void i(const char *tag, const char *fmt, ...);
 	/**
 	 * Log WARN message @ref fmt, ....
 	 *
 	 * @param tag 	specifies class or routine called from
 	 * @param fmt, ... 	the message to send to the log
 	 */
-	static void w(const char *tag, const char *fmt, ...);
+	void w(const char *tag, const char *fmt, ...);
 	/**
 	 * Log ERROR message @ref fmt, ....
 	 *
 	 * @param tag 	specifies class or routine called from
 	 * @param fmt, ... 	the message to send to the log
 	 */
-	static void e(const char *tag, const char *fmt, ...);
+	void e(const char *tag, const char *fmt, ...);
 	/**
 	 * Log FATAL message @ref fmt, ....
 	 *
 	 * @param tag 	specifies class or routine called from
 	 * @param fmt, ... 	the message to send to the log
 	 */
-	static void f(const char *tag, const char *fmt, ...);
+	void f(const char *tag, const char *fmt, ...);
 };
 
 #endif //SPACEROGUE_LOGGER_H
