@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+# CMake stuff
+cmake-*/
+
+# Vim stuff
+*~

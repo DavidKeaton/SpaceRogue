@@ -1,0 +1,5 @@
+@startuml
+class Input {
+    -map : Map<Key, Command>
+}
+@enduml

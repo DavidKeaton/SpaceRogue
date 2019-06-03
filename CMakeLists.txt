@@ -1,11 +1,5 @@
-cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.14)
 project(spacerogue)
-
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(.)
-include_directories(src)
-
-add_executable(spacerogue
-        src/SpaceRogue.cpp src/SpaceRogue.h
-        src/main.cpp)
+add_executable(spacerogue main.cpp Logger.cpp Logger.h Video.cpp Video.h Input.cpp Input.h)

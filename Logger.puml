@@ -1,0 +1,26 @@
+@startuml
+class Logger {
+    - fd : FILE
+    -LOG_NAME : const char *
+
+    -open(const char *)
+    -close()
+    -get_type(TYPE) : const char *
+
+    -log(TYPE, TAG, fmt, ...)
+    -log(TYPE, TAG, fmt, va_list)
+
+    +d(TAG, fmt, ...)
+    +i(TAG, fmt, ...)
+    +w(TAG, fmt, ...)
+    +e(TAG, fmt, ...)
+    +f(TAG, fmt, ...)
+}
+enum TYPE {
+    DEBUG   = 0,
+    INFO    = 1,
+    WARN    = 2,
+    ERROR   = 3,
+    FATAL   = 4
+}
+@enduml
