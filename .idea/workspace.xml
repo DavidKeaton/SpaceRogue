@@ -12,11 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a502184-0fcd-4dd6-9de4-8c3579955c26" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Logger.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logger.h" beforeDir="false" afterPath="$PROJECT_DIR$/Logger.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Input.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logger.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logger.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Video.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Video.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,10 +64,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+        <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state relative-caret-position="96">
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -71,41 +75,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Logger.h">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Logger.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="100" column="32" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
+            <state relative-caret-position="1200">
+              <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
               <folding>
                 <element signature="e#0#2#0" expanded="true" />
                 <element signature="e#95#112#0" expanded="true" />
                 <element signature="e#132#245#0" expanded="true" />
                 <element signature="e#1031#1277#0" expanded="true" />
-                <element signature="e#1280#1571#0" expanded="true" />
                 <element signature="e#1574#1706#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logger.cpp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Logger.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="998">
-              <caret line="92" column="52" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
+            <state relative-caret-position="138">
+              <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
               <folding>
                 <element signature="e#0#2#0" expanded="true" />
                 <element signature="e#37#55#0" expanded="true" />
-                <element signature="e#77#452#0" expanded="true" />
                 <element signature="e#455#556#0" expanded="true" />
-                <element signature="e#454#710#0" expanded="true" />
-                <element signature="e#454#825#0" expanded="true" />
-                <element signature="e#827#1605#0" expanded="true" />
-                <element signature="e#1607#1893#0" expanded="true" />
-                <element signature="e#1895#2179#0" expanded="true" />
-                <element signature="e#2181#2465#0" expanded="true" />
-                <element signature="e#2467#2753#0" expanded="true" />
-                <element signature="e#2755#3041#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,6 +115,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="DavidKeaton &lt;keaton.david@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -139,9 +138,9 @@
         <option value="$PROJECT_DIR$/Log.cpp" />
         <option value="$PROJECT_DIR$/Logger.puml" />
         <option value="$PROJECT_DIR$/Log.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Logger.cpp" />
         <option value="$PROJECT_DIR$/Logger.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -166,6 +165,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Non-Source Files'; set:Project Non-Source Files; class com.jetbrains.cidr.lang.search.scopes.ProjectSourcesScopeProvider$NonSourceFilesScope">
           <expand>
@@ -195,17 +205,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,6 +213,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/uml" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="project.scopes" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
@@ -297,6 +297,7 @@
       <workItem from="1559593923521" />
       <workItem from="1559594855815" />
       <workItem from="1559595417922" />
+      <workItem from="1559929039467" />
     </task>
     <task id="LOCAL-00008" summary="Video">
       <created>1559416572485</created>
@@ -319,7 +320,14 @@
       <workItem from="1559418920673" />
       <workItem from="1559418954705" />
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Migrated Logger to non-static - fixes compilation errors">
+      <created>1559595947011</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559595947011</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -337,11 +345,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-26" width="1442" height="931" extended-state="6" />
+    <frame x="-1" y="-1" width="1442" height="906" extended-state="6" />
     <layout>
-      <window_info id="Structure" order="0" sideWeight="0.6670688" side_tool="true" visible="true" weight="0.20916906" />
+      <window_info id="Structure" order="0" sideWeight="0.6692112" side_tool="true" visible="true" weight="0.21203439" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.33293125" visible="true" weight="0.20916906" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.3307888" visible="true" weight="0.21203439" />
       <window_info anchor="bottom" id="CMake" order="0" weight="0.32988358" />
       <window_info anchor="bottom" id="Tail" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" weight="0.32948717" />
@@ -357,7 +365,7 @@
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="make" order="13" weight="0.32948717" />
       <window_info anchor="bottom" id="Database" order="14" sideWeight="0.49871793" weight="0.32824427" />
-      <window_info active="true" anchor="bottom" id="Messages" order="15" sideWeight="0.49910071" visible="true" weight="0.31001207" />
+      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49910071" weight="0.326972" />
       <window_info anchor="right" id="Cargo" order="0" show_stripe_button="false" weight="0.32998565" />
       <window_info anchor="right" id="Json Parser" order="1" show_stripe_button="false" sideWeight="0.57051283" weight="0.32998565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
@@ -392,6 +400,8 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Migrated Logger to non-static - fixes compilation errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrated Logger to non-static - fixes compilation errors" />
   </component>
   <component name="editorHistoryManager">
     <entry file="uml://DATABASE/6538fc10-558b-4f9f-bb7a-a00943bc996f">
@@ -419,10 +429,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Video.h">
+    <entry file="file://$PROJECT_DIR$/src/Video.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Video.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Video.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Video.puml">
@@ -439,10 +449,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Input.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Input.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Input.h">
+    <entry file="file://$PROJECT_DIR$/src/Input.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test.puml" />
@@ -467,48 +477,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="96">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logger.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Logger.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="998">
-          <caret line="92" column="52" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#2#0" expanded="true" />
-            <element signature="e#37#55#0" expanded="true" />
-            <element signature="e#77#452#0" expanded="true" />
-            <element signature="e#455#556#0" expanded="true" />
-            <element signature="e#454#710#0" expanded="true" />
-            <element signature="e#454#825#0" expanded="true" />
-            <element signature="e#827#1605#0" expanded="true" />
-            <element signature="e#1607#1893#0" expanded="true" />
-            <element signature="e#1895#2179#0" expanded="true" />
-            <element signature="e#2181#2465#0" expanded="true" />
-            <element signature="e#2467#2753#0" expanded="true" />
-            <element signature="e#2755#3041#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logger.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="100" column="32" selection-start-line="100" selection-start-column="32" selection-end-line="100" selection-end-column="32" />
+        <state relative-caret-position="1200">
+          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
           <folding>
             <element signature="e#0#2#0" expanded="true" />
             <element signature="e#95#112#0" expanded="true" />
             <element signature="e#132#245#0" expanded="true" />
             <element signature="e#1031#1277#0" expanded="true" />
-            <element signature="e#1280#1571#0" expanded="true" />
             <element signature="e#1574#1706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logger.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#2#0" expanded="true" />
+            <element signature="e#37#55#0" expanded="true" />
+            <element signature="e#455#556#0" expanded="true" />
           </folding>
         </state>
       </provider>
