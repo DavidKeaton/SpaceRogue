@@ -2,6 +2,6 @@
 
 Rogue-like that takes place in SPACE!
 
+
 #### TODO ####
-- [] Video module
-- [] Input module
+Please refer to GitHub Issues listed and their subsequent TODO lists.
