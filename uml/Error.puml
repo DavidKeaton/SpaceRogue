@@ -1,0 +1,17 @@
+@startuml
+
+enum TYPE {
+    Logger : 0
+    Video : 1
+}
+
+class Error {
+    -type : TYPE
+
+    #parse()
+
+    +get() : std::string
+}
+
+
+@enduml
