@@ -8,21 +8,26 @@
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" />
+      <configuration PROFILE_NAME="RelWithDebInfo" CONFIG_NAME="RelWithDebInfo" />
+      <configuration PROFILE_NAME="MinSizeRel" CONFIG_NAME="MinSizeRel" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a502184-0fcd-4dd6-9de4-8c3579955c26" name="Default Changelist" comment="">
+    <list default="true" id="086f689f-3351-47ce-85d4-0ebaf7d8152f" name="Error" comment="">
+      <change afterPath="$PROJECT_DIR$/uml/Error.puml" afterDir="false" />
+    </list>
+    <list id="7a502184-0fcd-4dd6-9de4-8c3579955c26" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Error.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Error.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logger.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logger.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logger.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Video.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Video.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Logger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logger.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Video.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Video.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml/Video.puml" beforeDir="false" afterPath="$PROJECT_DIR$/uml/Video.puml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,66 +48,36 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="SQLite - space.sqlite" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logger.puml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Logger.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#2#0" expanded="true" />
-                <element signature="e#95#112#0" expanded="true" />
-                <element signature="e#132#245#0" expanded="true" />
-                <element signature="e#1031#1277#0" expanded="true" />
-                <element signature="e#1574#1706#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Logger.cpp">
+        <entry file="file://$PROJECT_DIR$/uml/Error.puml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+            <state relative-caret-position="160">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Error.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
               <folding>
-                <element signature="e#0#2#0" expanded="true" />
-                <element signature="e#37#55#0" expanded="true" />
-                <element signature="e#455#556#0" expanded="true" />
+                <element signature="e#255#370#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Error.cpp">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -127,7 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6538fc10-558b-4f9f-bb7a-a00943bc996f/console.sql" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/logger.puml" />
         <option value="$PROJECT_DIR$/Video.puml" />
@@ -141,6 +115,17 @@
         <option value="$PROJECT_DIR$/Logger.cpp" />
         <option value="$PROJECT_DIR$/Logger.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/6538fc10-558b-4f9f-bb7a-a00943bc996f/console.sql" />
+        <option value="$PROJECT_DIR$/src/Logger.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/Logger.cpp" />
+        <option value="$PROJECT_DIR$/uml/Video.puml" />
+        <option value="$PROJECT_DIR$/src/Video.h" />
+        <option value="$PROJECT_DIR$/src/Video.cpp" />
+        <option value="$PROJECT_DIR$/src/Error.puml" />
+        <option value="$PROJECT_DIR$/uml/Error.puml" />
+        <option value="$PROJECT_DIR$/src/Error.h" />
       </list>
     </option>
   </component>
@@ -159,7 +144,7 @@
       <showMembers Scope="true" />
       <showExcludedFiles Scope="false" ProjectPane="false" />
       <compactDirectories Scope="true" />
-      <autoscrollToSource Scope="false" />
+      <autoscrollToSource Scope="false" ProjectPane="false" />
       <autoscrollFromSource Scope="true" />
       <sortByType Scope="true" ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
@@ -171,6 +156,21 @@
             <path>
               <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
               <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,6 +192,16 @@
               <item name="spacerogue" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/src/spacerogue" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
+            <path>
+              <item name="spacerogue" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/src/spacerogue" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="spacerogue" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/src/spacerogue" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="uml" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -200,6 +210,11 @@
             <path>
               <item name="spacerogue" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/src/spacerogue" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="spacerogue" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/src/spacerogue" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -214,12 +229,22 @@
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/uml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
     <property name="typescript.add.unambiguous.imports.on.the.fly" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myUseExistingConsole" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/uml" />
+      <recent name="$PROJECT_DIR$/res" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -274,13 +299,13 @@
       <workItem from="1559594605782" />
       <workItem from="1559595240890" />
     </task>
-    <task active="true" id="LOCAL-00007" summary="Logger">
+    <task id="LOCAL-00007" summary="Logger">
       <changelist id="7a502184-0fcd-4dd6-9de4-8c3579955c26" name="Default Changelist" comment="" />
       <created>1559416563607</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1559595417318</updated>
+      <updated>1560449286295</updated>
       <workItem from="1559416566838" />
       <workItem from="1559416596973" />
       <workItem from="1559416633930" />
@@ -298,17 +323,29 @@
       <workItem from="1559594855815" />
       <workItem from="1559595417922" />
       <workItem from="1559929039467" />
+      <workItem from="1559930333309" />
+      <workItem from="1559930927342" duration="1094000" />
+      <workItem from="1560449201402" duration="86000" />
     </task>
     <task id="LOCAL-00008" summary="Video">
+      <changelist id="7a502184-0fcd-4dd6-9de4-8c3579955c26" name="Default Changelist" comment="" />
       <created>1559416572485</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1559418943974</updated>
+      <updated>1560449200726</updated>
       <workItem from="1559416573839" />
       <workItem from="1559416620780" />
       <workItem from="1559417487061" />
       <workItem from="1559418929674" />
+      <workItem from="1559929649966" />
+      <workItem from="1559930388747" />
+      <workItem from="1559932027027" duration="1150000" />
+      <workItem from="1559952062869" duration="122000" />
+      <workItem from="1559952497800" duration="2305000" />
+      <workItem from="1560267564034" duration="597000" />
+      <workItem from="1560447814402" duration="998000" />
+      <workItem from="1560449164078" duration="37000" />
     </task>
     <task id="LOCAL-00010" summary="Input">
       <created>1559417512624</created>
@@ -327,13 +364,30 @@
       <option name="project" value="LOCAL" />
       <updated>1559595947011</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="root dir cleanup">
+      <created>1559929738731</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559929738731</updated>
+    </task>
+    <task active="true" id="LOCAL-00013" summary="Error">
+      <changelist id="086f689f-3351-47ce-85d4-0ebaf7d8152f" name="Error" comment="" />
+      <created>1560448788890</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1560449286697</updated>
+      <workItem from="1560448827288" duration="337000" />
+      <workItem from="1560449286965" duration="69000" />
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <option name="createBranch" value="false" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="enabled" value="true" />
-    <option name="totallyTimeSpent" value="2126000" />
-    <option name="autoMode" value="false" />
+    <option name="totallyTimeSpent" value="8921000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -346,33 +400,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1442" height="906" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Structure" order="0" sideWeight="0.6692112" side_tool="true" visible="true" weight="0.21203439" />
+      <window_info id="Structure" order="0" sideWeight="0.55019057" side_tool="true" visible="true" weight="0.21203439" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.3307888" visible="true" weight="0.21203439" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4498094" visible="true" weight="0.21203439" />
       <window_info anchor="bottom" id="CMake" order="0" weight="0.32988358" />
       <window_info anchor="bottom" id="Tail" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" weight="0.32948717" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32951653" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49953488" side_tool="true" weight="0.32948717" />
-      <window_info anchor="bottom" id="TODO" order="5" sideWeight="0.50089926" side_tool="true" weight="0.32991013" />
-      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" weight="0.32734275" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="make" order="13" weight="0.32948717" />
-      <window_info anchor="bottom" id="Database" order="14" sideWeight="0.49871793" weight="0.32824427" />
-      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49910071" weight="0.326972" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.5009091" side_tool="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" weight="0.32734275" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.32991013" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.40949935" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="make" order="12" weight="0.32948717" />
+      <window_info anchor="bottom" id="Database" order="13" sideWeight="0.4990909" weight="0.32824427" />
+      <window_info active="true" anchor="bottom" id="Messages" order="14" sideWeight="0.49910071" visible="true" weight="0.32605904" />
+      <window_info anchor="bottom" id="Services" order="15" />
       <window_info anchor="right" id="Cargo" order="0" show_stripe_button="false" weight="0.32998565" />
       <window_info anchor="right" id="Json Parser" order="1" show_stripe_button="false" sideWeight="0.57051283" weight="0.32998565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Time Tracking" order="5" side_tool="true" weight="0.1969914" />
-      <window_info anchor="right" id="PlantUML" order="6" weight="0.3252149" />
+      <window_info anchor="right" content_ui="combo" id="TODO" order="5" sideWeight="0.50127226" side_tool="true" weight="0.3252149" />
+      <window_info anchor="right" id="Time Tracking" order="6" side_tool="true" weight="0.1969914" />
+      <window_info anchor="right" id="PlantUML" order="7" sideWeight="0.49872774" visible="true" weight="0.32234958" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,6 +446,19 @@
     </option>
     <option name="SHOW_DIFF_PREVIEW" value="false" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="myTodoPanelSettings">
       <TodoPanelSettings>
@@ -401,7 +470,19 @@
     <option name="SHOW_UNVERSIONED_FILES_WHILE_COMMIT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Migrated Logger to non-static - fixes compilation errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrated Logger to non-static - fixes compilation errors" />
+    <MESSAGE value="root dir cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="root dir cleanup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="uml://DATABASE/6538fc10-558b-4f9f-bb7a-a00943bc996f">
@@ -422,27 +503,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6538fc10-558b-4f9f-bb7a-a00943bc996f/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Video.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Video.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Video.puml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Input.puml">
+    <entry file="file://$PROJECT_DIR$/uml/Input.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
@@ -463,14 +524,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Game.puml">
+    <entry file="file://$PROJECT_DIR$/uml/Game.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logger.puml">
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6538fc10-558b-4f9f-bb7a-a00943bc996f/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uml/Video.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Video.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#2#0" expanded="true" />
+            <element signature="e#58#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Video.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uml/Logger.puml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
@@ -479,37 +573,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="128">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logger.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#2#0" expanded="true" />
+            <element signature="e#37#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Logger.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
+        <state relative-caret-position="432">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
           <folding>
             <element signature="e#0#2#0" expanded="true" />
             <element signature="e#95#112#0" expanded="true" />
             <element signature="e#132#245#0" expanded="true" />
             <element signature="e#1031#1277#0" expanded="true" />
+            <element signature="e#1280#1571#0" expanded="true" />
             <element signature="e#1574#1706#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logger.cpp">
+    <entry file="file://$PROJECT_DIR$/src/Error.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Error.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+        <state relative-caret-position="400">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
           <folding>
-            <element signature="e#0#2#0" expanded="true" />
-            <element signature="e#37#55#0" expanded="true" />
-            <element signature="e#455#556#0" expanded="true" />
+            <element signature="e#255#370#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uml/Error.puml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>

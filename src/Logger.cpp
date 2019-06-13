@@ -2,6 +2,7 @@
 // Created by robin on 6/1/19.
 //
 #include <cstdarg>
+#include <iostream>
 
 #include "Logger.h"
 
@@ -74,12 +75,14 @@ void Logger::log(Logger::TYPE type, const char *tag, const char *fmt, ...)
 void Logger::log(Logger::TYPE type, const char *tag, const char *fmt, va_list vl)
 {
 		// format variadic arguments into buf
-		char va_buf[1 + vsnprintf(nullptr, 0, fmt, vl)];
+		//char va_buf[1 + vsnprintf(nullptr, 0, fmt, vl)];
+		char va_buf[256];       // NOTE: for now, use static buffer size
 		vsnprintf(va_buf, sizeof(va_buf), fmt, vl);
 		// place type and tag into new buffer
 		const char *log_fmt = "[%s] (%s): %s";
-		char log_buf[1 + snprintf(nullptr, 0, log_fmt, get_type(type), tag, va_buf)];
-		snprintf(log_buf, sizeof(log_buf), log_fmt, get_type(type), tag, va_buf);
+		//char log_buf[1 + snprintf(nullptr, 0, log_fmt, get_type(type), tag, va_buf)];
+		char log_buf[512];
+		snprintf(log_buf, sizeof(log_buf), log_fmt,get_type(type), tag, va_buf);
 		// write the formatted string to the log
 		write(log_buf, sizeof(log_buf));
 }

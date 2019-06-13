@@ -1,5 +1,25 @@
 @startuml
-class Video {
-    -context : CONTEXT
+enum TYPE {
+    NCURSES : 0
+    SDL : 1
 }
+
+abstract class Video {
+    -context : void*
+    -screens : void*[]
+    -which : char
+
+    -flip()
+    -init(TYPE)
+
+    #update()
+    #draw()
+}
+
+class Console {
+    #update()
+    #draw()
+}
+
+Video<|--Console
 @enduml
