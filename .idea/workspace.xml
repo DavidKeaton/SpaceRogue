@@ -14,20 +14,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="086f689f-3351-47ce-85d4-0ebaf7d8152f" name="Error" comment="">
-      <change afterPath="$PROJECT_DIR$/uml/Error.puml" afterDir="false" />
-    </list>
-    <list id="7a502184-0fcd-4dd6-9de4-8c3579955c26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Error.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Error.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Logger.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Video.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Video.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Video.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uml/Video.puml" beforeDir="false" afterPath="$PROJECT_DIR$/uml/Video.puml" afterDir="false" />
-    </list>
+    <list default="true" id="086f689f-3351-47ce-85d4-0ebaf7d8152f" name="Error" comment="" />
+    <list id="7a502184-0fcd-4dd6-9de4-8c3579955c26" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +41,8 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uml/Error.puml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
@@ -63,13 +51,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Error.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+            <state relative-caret-position="64">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
               <folding>
-                <element signature="e#255#370#0" expanded="true" />
+                <element signature="e#0#2#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -95,9 +83,10 @@
         <option value="DavidKeaton &lt;keaton.david@gmail.com&gt;" />
       </list>
     </option>
+    <option name="UPDATE_CHANGES_POLICY" value="SHELVE" />
     <option name="PUSH_AUTO_UPDATE" value="true" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -150,32 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
-              <item name="uml" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Non-Source Files'; set:Project Non-Source Files; class com.jetbrains.cidr.lang.search.scopes.ProjectSourcesScopeProvider$NonSourceFilesScope">
           <expand>
@@ -215,6 +178,32 @@
               <item name="spacerogue" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/src/spacerogue" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spacerogue" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spacerogue" type="462c0819:PsiDirectoryNode" />
+              <item name="uml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -381,13 +370,20 @@
       <workItem from="1560448827288" duration="337000" />
       <workItem from="1560449286965" duration="69000" />
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="uml -&gt; error">
+      <created>1560531783431</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1560531783431</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <option name="createBranch" value="false" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="enabled" value="true" />
-    <option name="totallyTimeSpent" value="8921000" />
+    <option name="totallyTimeSpent" value="9010000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -402,9 +398,9 @@
     <frame x="-1" y="-1" width="1442" height="906" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Structure" order="0" sideWeight="0.55019057" side_tool="true" visible="true" weight="0.21203439" />
+      <window_info id="Structure" order="0" sideWeight="0.55089056" side_tool="true" visible="true" weight="0.21203439" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4498094" visible="true" weight="0.21203439" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4491094" visible="true" weight="0.21203439" />
       <window_info anchor="bottom" id="CMake" order="0" weight="0.32988358" />
       <window_info anchor="bottom" id="Tail" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" weight="0.32948717" />
@@ -471,7 +467,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Migrated Logger to non-static - fixes compilation errors" />
     <MESSAGE value="root dir cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="root dir cleanup" />
+    <MESSAGE value="uml -&gt; error" />
+    <option name="LAST_COMMIT_MESSAGE" value="uml -&gt; error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -612,10 +609,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Error.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        <state relative-caret-position="64">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
-            <element signature="e#255#370#0" expanded="true" />
+            <element signature="e#0#2#0" expanded="true" />
           </folding>
         </state>
       </provider>

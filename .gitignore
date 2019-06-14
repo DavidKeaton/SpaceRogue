@@ -32,3 +32,6 @@ cmake-*/
 
 # Vim stuff
 *~
+
+# old stuff
+*_old
