@@ -1,0 +1,260 @@
+@startuml
+abstract class UI.UI
+class UI.UI {
+    -root : UI.Thing
+--
+    +UI()
+    +~UI()
+--
+[Graphics Routines]
+
+    #draw()
+    #clear()
+    #flip()
+    #update()
+    #refresh()
+}
+
+UI.Thing <. UI.UI
+interface UI.Thing<T> {
+    -type : T
+    -ID : int
+    -queue : Stack<UI.Event>
+    -pos : {x, y, z}
+    -dim : {w, h}
+    -attributes[] : UI.Attribute[]
+--
+    +Thing(T)
+    +~Thing()
+--
+    #serialize() : void*
+--
+    +getType() : T
+    #createID() : int
+    +getID() : int
+--
+    #processEvent(UI.Event*) : void
+    +nextEvent() : UI.Event
+    +pushEvent(UI.Event*) : void
+    +popEvent() : UI.Event
+    +peekEvents(int) : UI.Event[]
+    +countEvents() : int
+--
+    #resize({x, y, z}, {w, h}) : bool
+    +getPos() : {x, y}
+    +setPos({x, y, z}) : void
+    +getSize() : {w, h}
+    +setSize({w, h}) : void
+--
+    +checkAttribute(UI.Attribute) : bool
+    +getAttributes() : UI.Attribute[]
+    +setAttribute(UI.Attribute) : void
+    +setAttributes(UI.Attribute[]) : UI.Attribute[]
+}
+
+
+UI.Thing ..> UI.Event
+class UI.Event<T> {
+    -type : T
+    -ID : int
+    -category : int
+    -code : int
+    -data : void*
+--
+    +Event(int, int)
+    +Event(int, int, void*)
+    +~Event()
+--
+    +toString() : string
+--
+    +getID() : int
+    #createID(int, int) : int
+    +getCategory() : int
+    +getCode() : int
+    +getData() : void*
+    +setData(void*) : void
+--
+}
+
+UI.Thing <|.. UI.Widget
+UI.Container <|-- UI.Widget
+abstract class UI.Widget<T=UI.Type.Widget> {
+    -type : T
+    -children : LinkedList<UI.Things>
+    -cache : Map<int ID, int index
+--
+    +Widget()
+    +~Widget()
+--
+}
+
+abstract class UI.Container
+UI.Thing <|. UI.Container
+abstract class UI.Container<T=UI.Type.Container> {
+    -type : T
+    -children : LinkedList<UI.Thing>
+    -cache : Map<int ID, int index>
+--
+    +Container()
+    +~Container()
+--
+[Node Management]
+
+    #addChild(UI.Thing)
+    #removeChild(UI.Thing*) : UI.Thing
+    #removeChildren(UI.Thing[]) : UI.Thing[]
+    #getChildren() : UI.Thing[]
+    #setChildren(UI.Thing[]) : UI.Thing[]
+    #clearChildren() : UI.Thing[]
+
+    +add(UI.Thing.ID) : void
+    +add(UI.Thing) : void
+    +add(UI.Thing[]) : void
+    +insert(UI.Thing.ID, int) : void
+    +insert(UI.Thing, int) : void
+    +insert(UI.Thing[], int) : void
+    +remove(UI.Thing) : UI.Thing
+    +remove(UI.Thing[]) : UI.Thing[]
+    +remove(UI.Type, int) : UI.Thing[]
+    +get(int) : UI.Thing
+    +get(int, int) : UI.Thing[]
+    +get(UI.Type) : UI.Thing[]
+    +set(UI.Thing, int) : UI.Thing
+    +set(UI.Thing[], int) : UI.Thing[]
+--
+[Node Helpers]
+
+    #findByID(UI.Thing.ID) : UI.Thing
+    #findByIndex(int) : UI.Thing
+    +find(UI.Thing.ID || int) : UI.Thing
+
+    #sort() : void
+}
+
+abstract class UI.Element
+UI.Thing <|.. UI.Element
+abstract class UI.Element<T=UI.Type.Element> {
+    -type : T
+--
+    +Element()
+    +~Element()
+--
+}
+
+UI.Type.Event <-- UI.Event
+enum UI.Type.Event {
+     [Video]
+     *refresh
+     *flip
+     *draw
+     *createUI
+ --
+     [UI]
+     *thingCreate
+     *thingDestroy
+     *thingResize
+     *thingUpdate
+     *thingDraw
+ --
+     [Audio]
+     *play
+     *pause
+     *stop
+     *volume
+     *mute
+ --
+     [Input]
+     *key
+     *mouse
+     *joypad
+ --
+     [Engine]
+     *actions
+     *time
+     *weather
+     *AI
+ --
+     [Map]
+     *region
+     *world
+     *system
+     *galaxy
+     *universe
+ --
+}
+
+UI.Type.Widget <- UI.Widget
+enum UI.Type.Widget {
+    [Inventory]
+    *Uses directional-input and hotkeys
+     to allow interaction with interface
+ --
+     [Info]
+     *Item or enemy/character information
+ --
+     [Stats]
+     *Stats, skills, and player info
+}
+
+UI.Type.Container <- UI.Container
+enum UI.Type.Container {
+    [Tabs]
+    *browser-like tabs
+--
+    [Split]
+    -vertical
+    -horizontal
+}
+
+UI.Type.Element <- UI.Element
+enum UI.Type.Element {
+    [Canvas]
+    *drawable window
+--
+    [Menu]
+    *hotkeys
+--
+    [Text]
+    *scrollable
+    -auto-scroll
+    -single-line
+    -multi-line
+--
+    [Choice]
+    *multi-choice
+    *scrollable
+    -radio
+    -drop-down
+--
+    [Input]
+    +raw
+    +alpha/numeric
+    +editor
+--
+    [List]
+    +drop-down
+}
+
+UI.Thing -> UI.Attribute
+enum UI.Attribute {
+    [Orientation]
+         |UL   U   UR|
+         |L    [C]    R|
+         |DL   D   DR|
+--
+    [Border]
+        +Width
+        +Height
+--
+    [Color]
+        +FG
+        +BG
+--
+    [Text]
+        +Hidden
+        +Blinking
+        +Bold
+        +Italic
+        +Underline
+}
+@enduml
