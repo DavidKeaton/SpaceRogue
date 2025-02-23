@@ -32,6 +32,8 @@ cmake-*/
 
 # Vim stuff
 *~
+*.swp
+*.swo
 
 # old stuff
 *_old
