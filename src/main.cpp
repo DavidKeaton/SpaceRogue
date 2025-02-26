@@ -1,6 +1,7 @@
 #include <iostream>
 
-#include "Logger.h"
+#include "logger.h"
+
 
 int main()
 {
@@ -13,3 +14,4 @@ int main()
 	delete Log;
 	return 0;
 }
+

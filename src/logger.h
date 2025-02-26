@@ -1,11 +1,8 @@
-//
-// Created by robin on 6/1/19.
-//
-#ifndef SPACEROGUE_LOGGER_H
-	#define SPACEROGUE_LOGGER_H
+#ifndef _LOGGER_H_
+#define _LOGGER_H_
 
-#include <cstdio>
 #include <string>
+#include <stdio.h>
 
 /**
  * Handles logging messages to a log file, or 'captains.log' by default.
@@ -136,4 +133,5 @@ public:
 	void f(const char *tag, const char *fmt, ...);
 };
 
-#endif //SPACEROGUE_LOGGER_H
+#endif
+

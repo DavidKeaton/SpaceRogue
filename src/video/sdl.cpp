@@ -1,6 +1,9 @@
-// Created by davek on 11/17/19.
+#include "video/video.h"
+#include "video/sdl.h"
 
-#include "Video.h"
+
+namespace video
+{
 
 void SDL::init()
 {
@@ -24,3 +27,6 @@ override SDL::setSize(Video::size *d)
 {
 	return Video::setSize(d);
 }
+
+}
+

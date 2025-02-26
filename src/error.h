@@ -1,10 +1,5 @@
-//
-// Created by robin on 6/13/19.
-//
-
-#ifndef SPACEROGUE_ERROR_H
-#define SPACEROGUE_ERROR_H
-
+#ifndef _ERROR_H_
+#define _ERROR_H_
 
 #include <string>
 
@@ -12,8 +7,10 @@ class Error
 {
 private:
 	int errno;
+
 protected:
 	virtual void parse(void) = 0;
+
 public:
 	enum TYPE {
 		Logger      = 0,
@@ -29,4 +26,5 @@ public:
 };
 
 
-#endif //SPACEROGUE_ERROR_H
+#endif
+

@@ -1,10 +1,7 @@
-//
-// Created by robin on 6/1/19.
-//
-#include <cstdarg>
 #include <iostream>
+#include <stdarg.h>
 
-#include "Logger.h"
+#include "logger.h"
 
 /**
  * Determine type of log message.
@@ -156,3 +153,4 @@ void Logger::f(const char *tag, const char *fmt, ...)
 	log(Logger::TYPE::FATAL, tag, fmt, vl);
 	va_end(vl);
 }
+

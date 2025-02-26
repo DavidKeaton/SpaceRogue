@@ -1,6 +1,5 @@
-// Created by davek on 6/1/19.
+#include "video/video.h"
 
-#include "Video.h"
 
 /**
  * Initialize the display with the @ref Video::TYPE of UI.
@@ -59,3 +58,4 @@ override Video::setSize(const Video::size *d)
 	// TODO: log error
 	return false;
 }
+

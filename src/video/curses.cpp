@@ -1,6 +1,9 @@
-// Created by davek on 11/17/19.
+#include "video/video.h"
+#include "video/curses.h"
 
-#include "Video.h"
+
+namespace video
+{
 
 /**
  * Initialize NCURSES and set up appropriate paramaters.
@@ -45,3 +48,6 @@ override Curses::setSize(Video::size *d)
 	} else {
 	}
 }
+
+}
+
