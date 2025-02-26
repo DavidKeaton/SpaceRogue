@@ -1,3 +1,4 @@
+#include "util/geometry.h"
 #include "video/video.h"
 #include "video/curses.h"
 
@@ -5,32 +6,69 @@
 namespace video
 {
 
-/**
- * Initialize NCURSES and set up appropriate paramaters.
- */
-void Curses::init()
-{
-}
-
 Curses::Curses(void)
 {
-	//
-	this->char_dim = (const) {8, 8};
-	// setup
-	init();
+	for(unsigned int i = 0; i < BUFFER_COUNT; ++i) {
+		this->screens[i] = nullptr;
+	}
 }
 
-override Curses::update(void)
-{}
+#if 0
+Curses::~Curses(void)
+{
+	this->shutdown();
+}
+#endif
 
-override Curses::draw(void *buf)
-{}
+Video::Type Curses::getType(void) const
+{
+	return Video::Type::CURSES;
+}
 
-override Curses::flip(void)
-{}
+// TODO
+void Curses::initialize(void)
+{
+	// TODO: set the size of 1 cell, defaults to 8x8
+	this->setCellSize({8, 8});
 
+	// TODO: initialize curses
+
+	// TODO: create screens
+}
+
+// TODO
+bool Curses::shutdown(void)
+{
+	// TODO: destroy screens
+
+	// TODO: shutdown curses
+}
+
+// TODO
+void Curses::setCellSize(util::geometry::dimensions_t &d)
+{
+	super::setCellSize(d);
+}
+
+// TODO
+void Curses::update(void)
+{
+}
+
+// TODO
+void Curses::draw(void *buf)
+{
+}
+
+// TODO
+void Curses::flip(void)
+{
+	super::flip();
+}
+
+// TODO
 // translate screen dimensions into the appropriate console dimensions
-override Curses::setSize(Video::size *d)
+bool Curses::setSize(const util::geometry::dimensions_t &d)
 {
 	// maximum width?
 	if(this->dim.width == Video::FULLSCREEN) {

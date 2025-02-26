@@ -5,21 +5,18 @@ namespace util::geometry
 {
 
 /**
- * @brief
+ * @brief Holds 3D dimensions.
  */
-typedef struct dim {
-	int width;
-	int height;
-	int length;
+typedef struct dimensions {
+	int width{ 0 };
+	int height{ 0 };
+	int length{ 0 };
 
-	// size = *{w, h}
-	dim& operator=(const dim &rhs);
+	// set our dimensions from another
+	dimensions& operator=(const dimensions &rhs);
+} dimensions_t;
 
-	// size = {w, h}
-	dim& operator=(const dim *rhs);
-} dim_t;
-
-} // }}} geometry
+} // }}} util::geometry
 
 #endif
 

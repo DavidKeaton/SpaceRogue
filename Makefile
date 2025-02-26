@@ -11,8 +11,7 @@ ifneq (DEBUG,)
 endif
 
 SRC_FILES		= $(wildcard src/*.cpp) \
-				  $(wildcard src/ui/*.cpp) \
-				  src/video/video.cpp
+				  $(wildcard src/ui/*.cpp)
 
 # determine graphics library
 ifeq (GFX,sdl)
